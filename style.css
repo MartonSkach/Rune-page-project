@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+main {
+  width: 100%;
+  min-width: 650px;
+  height: 100%;
+  
+}
+
+h1 {
+  color: antiquewhite;
+  padding-top: 3%;
+}
+
+input {
+  height: 25px;
+}
+
+.topNavigation {
+  display: flex;
+  flex-direction: column;
+  background-image: url('./img/header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-width: 650px;
+}
+
+.navigationMenu {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background: #2a3260;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: #dbbd15;
+  border-bottom: #5b5010;
+  border-width: 2px;
+  box-shadow: 0px 4px 5px #000000;
+  position: fixed;
+  order: 9999;
+  min-width: 650px;
+}
+
+.button {
+  height: 35px;
+  width: 100%;
+}
+
+button {
+  height: 35px;
+  width: 110px;
+  float: left;
+  color: white;
+  background-color: #2d2c63;
+  opacity: 0.6;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.logoHolder {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 180px;
+  padding-top: 3%;
+  box-shadow: 0px 5px 8px #000000;
+  min-width: 650px;
+}
+
+.mainContainer {
+  width: 90%;
+  background-image: url('./img/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 0 5% 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 650px;
+}
+
+.mainLogo {
+  max-height: 150px;
+  width: auto;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  max-width: 950px;
+}
+
+li {
+  margin: 7px 7px 7px 7px;
+  width: 100px;
+  height: 100px;
+  background-image: 
+        linear-gradient(#dbbd15, #5b5010),
+        linear-gradient(#dbbd15, #5b5010);
+  padding: 3px 3px 3px 3px;
+}
+
+li div {
+  width: 100px;
+  height: 100px;
+  background-size: 100px;
+}
+
+p {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  font-size: 1.5em; 
+}
+
+li:hover p {
+  opacity: 1;
+}
