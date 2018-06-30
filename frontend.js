@@ -9,7 +9,8 @@ const renderPage = () => {
 
   response.champions.forEach(element => {
     const champion = document.createElement('li');
-    champion.innerHTML = `<div class="champIcons" id="icon${element.champ_id}"><p>${element.champ_name}</p></div>`;
+    champion.classList.add("championIconListElement");
+    champion.innerHTML = `<div class="champIcons" id="icon${element.champ_id}"><p class="iconText">${element.champ_name}</p></div>`;
     ul.appendChild(champion);
     document.querySelector(`#icon${element.champ_id}`).style.backgroundImage = `url('./img/${element.champ_name.replace(`'`, '')}.png')`;
     document.querySelector(`#icon${element.champ_id}`).style.fontSize = `${29 - element.champ_name.length}px`;
