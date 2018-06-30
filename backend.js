@@ -15,7 +15,7 @@ const conn = mysql.createConnection({
   database: process.env.DB_DATABASE,
 });
 
-app.get('/api/champions_list',  (req, res) => {
+app.get('/api/champions_list', (req, res) => {
   let sql = `SELECT * from champions`;
 
   conn.query(sql, (err, rows) => {
@@ -32,7 +32,26 @@ app.get('/api/champions_list',  (req, res) => {
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
-}) 
+});
+
+app.get('/championpage/:name?/runes', (req, res) => {
+    res.sendFile(__dirname + '/championpage.html');
+});
+
+app.get('/api/champ-rune', (req, res) => {
+  let id = req.body.id;
+  let sql = `SELECT * from champions WHERE champ_id = '${id}'`;
+  conn.query(sql, (err, rows) => {
+    if (err) {
+      console.log(err);
+      res.status(500).send();
+      return;
+    }
+    res.json({
+      champions: rows,
+    });
+  });
+});
 
 app.listen(PORT, () => {
   console.log(`Welcome on port:${PORT}, Summoner!`);

@@ -10,15 +10,15 @@
 </head>
 
 <body>
+  <div class="wrapper">
   <main>
     <div class="navigationMenu">
       <div class="buttons">
-        <button>Champions</button>
-        <button>Roles</button>
-        <button>Custom</button>
-        <button>All</button>
+        <button><a href="http://localhost:8080/">Home</a></button>
+        <button>Groups</button>
+        <button>Runes</button>
       </div>
-      <input type="text" placeholder="Search...">
+      <input id="searchInput" type="text" onkeyup="searchListFunction()" placeholder="Search...">
     </div>
     <div class="topNavigation">
       <div class="logoHolder">
@@ -31,6 +31,7 @@
     <ul id="listHolder">
     </ul>
   </div>
+</div>
   <script src="frontend.js"></script>
 </body>
 
