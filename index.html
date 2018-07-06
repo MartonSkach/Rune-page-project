@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>The Runeforge</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/assets/style.css">
 </head>
-
 <body>
   <div class="wrapper">
     <main>
@@ -28,47 +27,19 @@
         </div>
       </div>
     </main>
-    <div class="aktivator">
-      <div class="championBackground"></div>
-    </div>
     <div class="hl"></div>
     <div class="mainContainer">
       <video autoplay muted loop id="videoBackground">
-        <source src="./splash/summoners-rift.mp4" type="video/mp4">
+        <source src="assets/splash/summoners-rift.mp4" type="video/mp4">
       </video>
-      <h1>Choose a champion:</h1>
-      <ul id="listHolder">
-      </ul>
-      <div class="runedataHolder">
-        <div class="runedataHolderWidthControl">
-          <p id="runedataHolderH2">Champion's runepage 1</p>
-        </div>
-        <div class="runepagesHolder">
-          <ul class="runeIconListHolderMain">
-            <li>
-              <div class="runeIconHolder" id="keyStoneRune"></div>
-            </li>
-            <li>
-              <div class="runeIconHolder"></div>
-            </li>
-            <li>
-              <div class="runeIconHolder"></div>
-            </li>
-            <li>
-              <div class="runeIconHolder"></div>
-            </li>
-            <li>
-              <div class="runeIconHolder" id="LesserSpacer"></div>
-            </li>
-            <li>
-              <div class="runeIconHolder"></div>
-            </li>
-          </ul>
-        </div>
+      <div class="champSelectBoard">
+        <h1>Choose a champion:</h1>
+        <ul id="listHolder">
+        </ul>
       </div>
-    </div>
+      
   </div>
-  <script src="frontend.js"></script>
+  <script src="assets/frontend.js"></script>
 </body>
 
 </html>
