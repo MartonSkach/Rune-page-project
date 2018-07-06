@@ -8,22 +8,25 @@
   <title>The Runeforge</title>
   <link rel="stylesheet" type="text/css" href="/assets/style.css">
 </head>
+
 <body>
   <div class="wrapper">
     <main>
       <div class="navigationMenu">
         <div class="buttons">
-          <button>
-            <a href="http://localhost:8080/">Home</a>
-          </button>
+          <a href="http://localhost:8080/">
+            <button>Home</button>
+          </a>
           <button>Groups</button>
-          <button>Runes</button>
+          <a href="http://localhost:8080/runepages">
+            <button>Runes</button>
+          </a>
         </div>
         <input id="searchInput" type="text" onkeyup="searchListFunction()" placeholder="Search...">
       </div>
       <div class="topNavigation">
         <div class="logoHolder">
-          <img class="mainLogo" src="http://pluspng.com/img-png/league-of-legends-png-league-of-legends-logo-transparent-png-900.png">
+          <img class="mainLogo" src="assets/logo/logo.png">
         </div>
       </div>
     </main>
@@ -37,9 +40,9 @@
         <ul id="listHolder">
         </ul>
       </div>
-      
-  </div>
-  <script src="assets/frontend.js"></script>
+
+    </div>
+    <script src="assets/frontend.js"></script>
 </body>
 
 </html>

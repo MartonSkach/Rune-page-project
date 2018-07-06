@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Runeforge</title>
+  <link rel="stylesheet" type="text/css" href="/assets/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <main>
+      <div class="navigationMenu">
+        <div class="buttons">
+          <a href="http://localhost:8080/">
+            <button>Home</button>
+          </a>
+          <button>Groups</button>
+          <a href="http://localhost:8080/runepages">
+            <button>Runes</button>
+          </a>
+        </div>
+        <input id="searchInput" type="text" onkeyup="searchListFunction()" placeholder="Search...">
+      </div>
+      <div class="topNavigation">
+        <div class="logoHolder">
+          <img class="mainLogo" src="/assets/logo/logo.png">
+        </div>
+      </div>
+    </main>
+    <div class="mainContainer">
+      <video autoplay muted loop id="videoBackground">
+        <source src="/assets/splash/summoners-rift.mp4" type="video/mp4">
+      </video>
+      <form>
+        <div class="runeSelectorForm">
+          <h1 class="choosePathH1">Choose a path:</h1>
+          <div class="pathSelectorDiv">
+            <label>
+              <input type="radio" value="precision" name="pathChoice">
+              <img src="/assets/icons/Precision_icon.png">
+            </label>
+            <label>
+              <input type="radio" value="domination" name="pathChoice">
+              <img src="/assets/icons/Domination_icon.png">
+            </label>
+            <label>
+              <input type="radio" value="sorcery" name="pathChoice">
+              <img src="/assets/icons/Sorcery_icon.png">
+            </label>
+            <label>
+              <input type="radio" value="resolve" name="pathChoice">
+              <img src="/assets/icons/Resolve_icon.png">
+            </label>
+            <label>
+              <input type="radio" value="inspiration" name="pathChoice">
+              <img src="/assets/icons/Inspiration_icon.png">
+            </label>
+          </div>
+          <h1 class="choosePathH1">Choose a minor path:</h1>
+          <div class="pathSelectorDiv">
+            <label>
+              <input type="radio" value="precision" name="minorPathChoice">
+              <img src="/assets/icons/Precision_icon.png">
+            </label>
+            <label>
+              <input type="radio" value="domination" name="minorPathChoice">
+              <img src="/assets/icons/Domination_icon.png">
+            </label>
+            <label>
+              <input type="radio" value="sorcery" name="minorPathChoice">
+              <img src="/assets/icons/Sorcery_icon.png">
+            </label>
+            <label>
+              <input type="radio" value="resolve" name="minorPathChoice">
+              <img src="/assets/icons/Resolve_icon.png">
+            </label>
+            <label>
+              <input type="radio" value="inspiration" name="minorPathChoice">
+              <img src="/assets/icons/Inspiration_icon.png">
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="/assets/runepages.js"></script>
+</body>
+
+</html>

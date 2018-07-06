@@ -53,7 +53,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/runes/:name', (req, res) => {
-    res.sendFile(__dirname + '/runepage.html');
+    res.sendFile(__dirname + '/championpage.html');
+});
+
+app.get('/runepages', (req, res) => {
+    res.sendFile(__dirname + '/runepages.html');
 });
 
 app.get('/api/champ-rune', (req, res) => {
