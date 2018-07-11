@@ -96,11 +96,7 @@ const renderPage = () => {
     lesserRune2Tooltip.innerText = `${element.lesser_rune_2}`;
     lesserRune2Tooltip.classList.add('tooltipTextSmall')
     lesserRuneDiv2.appendChild(lesserRune2Tooltip);
-
-
-  
   });
-
 };
 
 http.onload = () => {

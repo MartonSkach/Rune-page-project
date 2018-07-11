@@ -281,3 +281,8 @@ label input:checked + img {
   border-right-color: #5b5010;
   background-color: rgba(0, 0, 0, 0.45);
 }
+
+.mainPathRuneContainer {
+  display: flex;
+  justify-content: center;
+}
