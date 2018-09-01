@@ -1,6 +1,6 @@
 'use stict'
 const http = new XMLHttpRequest();
-const host = 'http://localhost:8080'
+const host = 'http://localhost:8080';
 http.open('GET', `${host}/api/champions_list`, true);
 
 const renderPage = () => {
